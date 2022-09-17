@@ -28,7 +28,7 @@ public class Product {
     private Double price;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "organization_id")
+    @JoinColumn(name = "user_id")
     @ToString.Exclude
     private User user;
 
