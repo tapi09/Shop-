@@ -1,7 +1,15 @@
 package com.completeapplication.shop.service;
 
-import org.springframework.stereotype.Service;
+import com.completeapplication.shop.model.User;
 
-@Service
-public class UserService {
+import java.util.List;
+
+
+public interface UserService {
+
+    User saveUser(User user);
+    User getUser(Integer id);
+    List<User> getUsers();
+
+    void updateEntityIfExists(Integer id, User user);
 }

@@ -8,19 +8,19 @@ spring:
     database: MYSQL
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-  thymeleaf:
-    cache: false
-  server:
-    error:
-      whitelabel:
-        enabled: false
-    servlet:
-      session:
-        cookie:
-          http-only: true
-        tracking-modes:
-          - cookie
+
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: com.fasterxml.jackson.databind.PropertyNamingStrategy.SnakeCaseStrategy
+    visibility:
+      field: any
+      getter: none
+      setter: none
+      is-getter: none
+
+jwt:
+  secret: shopshopshopshopshopshopshopshopshopshopshopshopshopshop
