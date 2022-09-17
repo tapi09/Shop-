@@ -12,15 +12,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-
-  jackson:
-    default-property-inclusion: non_null
-    property-naming-strategy: com.fasterxml.jackson.databind.PropertyNamingStrategy.SnakeCaseStrategy
-    visibility:
-      field: any
-      getter: none
-      setter: none
-      is-getter: none
-
 jwt:
   secret: shopshopshopshopshopshopshopshopshopshopshopshopshopshop
